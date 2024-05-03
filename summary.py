@@ -157,7 +157,7 @@ def main():
 	"""
         components.html(html_temp7)
         text_data1 = st.text_input("Enter a word For pluralize / singularize")
-        if st.checkbox("pluralize"):
+        if st.checkbox("Pluralize"):
             st.warning(pluralize(text_data1))
         if st.checkbox("singularize"):
             st.warning(singularize(text_data1))
