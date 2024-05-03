@@ -1,0 +1,14 @@
+FROM python:3.8-slim-buster
+
+RUN apt update -y && apt install -y pkg-config libmariadb-dev build-essential
+RUN apt install awscli -y
+
+EXPOSE 8501
+
+WORKDIR /app
+
+COPY . /app
+RUN pip install -r final_requirements.txt
+RUN python -m spacy download en_core_web_sm
+
+ENTRYPOINT ["streamlit", "run", "summary.py", "--server.port=8501"]

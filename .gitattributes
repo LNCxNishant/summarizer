@@ -1,0 +1,4 @@
+"embedded summarizer.py" scanning=false
+tokenizer.py scanning=false
+synonym.py scanning=false
+translator.py scanning=false

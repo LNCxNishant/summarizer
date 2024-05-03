@@ -1,0 +1,5 @@
+Manually install this
+
+Paste this in dockerfile
+
+python -m spacy download en_core_web_sm
