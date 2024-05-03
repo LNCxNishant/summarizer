@@ -17,7 +17,8 @@ load_dotenv()
 import openai
 nlp = spacy.load('en_core_web_sm')
 
-key = os.environ.get("OPENAI_API_KEY")
+#key = os.environ.get("OPENAI_API_KEY")
+key="sk-proj-ChhIZz23rnQztlZFKZVtT3BlbkFJDXBJjIYqFE0XrFH6AVdW"
 #custom funtion 
 def summary(text):
     openai.api_key = key
@@ -86,7 +87,7 @@ def main():
        
         # text_range= st.sidebar.slider("Summarize words Range",25,500)
         text = st.text_area("Input Text For Summary",height=250)
-        if st.button("summarize"):
+        if st.button("Summarize"):
             st.success(summary(text))
         #if st.button("summarize"):
            #st.warning(summary(text,word_count=text_range))
