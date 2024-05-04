@@ -87,7 +87,7 @@ def main():
        
         # text_range= st.sidebar.slider("Summarize words Range",25,500)
         text = st.text_area("Input Text For Summary",height=250)
-        if st.button("Summarize"):
+        if st.button("summarize"):
             st.success(summary(text))
         #if st.button("summarize"):
            #st.warning(summary(text,word_count=text_range))
